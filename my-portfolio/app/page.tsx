@@ -1,12 +1,14 @@
+import Hero from '@/components/main/Hero'
 import React from 'react'
-import Home from '@/components/Home/Home'
+
 
 const Homepage = () => {
   return (
-
-    <div>
-      <Home />
-    </div>
+    <main className='h-full w-full'>
+      <div className='flex flex-col h-[850px] gap-20'>
+        <Hero />
+      </div>
+    </main>
   )
 }
 

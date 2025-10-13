@@ -1,34 +1,24 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
-const font = Sora({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-});
-
-{/*const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-}); */}
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Hirusha Kularathna Portfolio Website using Next.js",
+  description: "Hirusha Kularathna's portfolio website",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased`}
+        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <ResponsiveNav />
         {children}
       </body>
     </html>
