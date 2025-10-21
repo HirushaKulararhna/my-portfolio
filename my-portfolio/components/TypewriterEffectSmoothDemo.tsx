@@ -72,10 +72,11 @@ export function TypewriterEffectSmoothDemo() {
 
       {/* Buttons */}
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-10">
-        <button className="w-40 h-12 rounded-xl bg-black border dark:border-white text-white text-sm font-medium hover:opacity-80 transition">
+        
+        <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
           Hire Me
         </button>
-        <button className="w-40 h-12 rounded-xl bg-white text-black border border-black text-sm font-medium hover:bg-gray-100 transition">
+        <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
           Download CV
         </button>
       </div>
